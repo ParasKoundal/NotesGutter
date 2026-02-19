@@ -2,8 +2,6 @@
 
 > **Don't pollute your code. Annotate it.**
 
-
-
 **NotesGutter** is the ultimate "out-of-band" annotation tool for VS Code. Attach **rich Markdown notes** and **infinite-canvas drawings** to any line of code—without turning your source files into a comment graveyard.
 
 ---
@@ -62,6 +60,24 @@ Link notes across your entire project. It's like a wiki for your code.
 ```typescript
 // See the user model in another file:
 // @ng note ../models/User.ts:schema-diagram
+// Or use slash syntax:
+// @ng note ../models/User.ts/schema-diagram
+```
+
+### ⚓ Deep Linking
+Jump straight to a specific header inside any note (local or remote) using `#`.
+
+```javascript
+// Link to the "Performance" section of any note:
+// @ng note architecture-doc#Performance
+```
+
+### 🎯 Multiple Notes in One Line
+Want to attach a note AND a drawing to the same line? No problem.
+
+```javascript
+// @ng note logic-details @ng draw flow-diagram
+function criticalProcess() { ... }
 ```
 
 ### ⚡ Zero Config
@@ -73,11 +89,11 @@ It just works. Install, click, type.
 
 1.  **Add a Note**:
     -   Place your cursor on a tricky line.
-    -   Run `NotesGutter: Insert Note Anchor` (or `Cmd+Shift+M`).
+    -   Run `NotesGutter: Insert Note Anchor` (or `Cmd+Shift+M`) or manually type the command.
     -   Start typing! ✍️
 
 2.  **Add a Drawing**:
-    -   Run `NotesGutter: Insert Draw Anchor`.
+    -   Run `NotesGutter: Insert Draw Anchor` or manually type.
     -   Unleash your inner artist! 🎨
 
 ## 🔒 Privacy & Storage
