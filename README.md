@@ -44,7 +44,7 @@ const users = rawData.filter(u => u.isActive);
 class UserManager { ... }
 ```
 
-Click the icon in the gutter, and a beautiful **Markdown Editor** slides open. Or click a button and draw a full architecture diagram right there. All your notes live safely in a separate folder, synced with your repo.
+Click the button which will appear above the comment, and a beautiful **Markdown Editor** slides open. Or click a button and draw a full architecture diagram right there. All your notes live safely in a separate folder, synced with your repo.
 
 ---
 
