@@ -4,6 +4,8 @@
 
 **NotesGutter** is the ultimate "out-of-band" annotation tool for VS Code. Attach **rich Markdown notes** and **infinite-canvas drawings** to any line of code—without turning your source files into a comment graveyard.
 
+![NotesGutter Preview](https://github.com/ParasKoundal/NotesGutter/raw/main/Preview.png)
+
 ---
 
 ### 📦 Install Now
