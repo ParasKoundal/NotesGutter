@@ -13,7 +13,7 @@
 | Platform | Link |
 | :--- | :--- |
 | **VS Code Marketplace** | [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/ParasKoundal.notesgutter?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=ParasKoundal.notesgutter) |
-| **Open VSX** | [![Open VSX](https://img.shields.io/open-vsx/v/ParasKoundal/notesgutter?style=for-the-badge&logo=eclipse-ide)](https://open-vsx.org/extension/ParasKoundal/notesgutter) |
+| **Open VSX (For Cursor, Antigravity etc)** | [![Open VSX](https://img.shields.io/open-vsx/v/ParasKoundal/notesgutter?style=for-the-badge&logo=eclipse-ide)](https://open-vsx.org/extension/ParasKoundal/notesgutter) |
 
 ---
 
