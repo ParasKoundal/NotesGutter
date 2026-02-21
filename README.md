@@ -82,6 +82,17 @@ Want to attach a note AND a drawing to the same line? No problem.
 function criticalProcess() { ... }
 ```
 
+### 🔗 Global Attachments (`@ng attach`)
+Attach any external URL or local file path to a line of code. Clicking it opens the target instantly, keeping your editor clean.
+
+```javascript
+// Link to online docs:
+// @ng attach https://github.com/ParasKoundal/NotesGutter
+
+// Link to a local file:
+// @ng attach ../assets/architecture.pdf
+```
+
 ### ⚡ Zero Config
 It just works. Install, click, type.
 
