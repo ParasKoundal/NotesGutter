@@ -93,6 +93,13 @@ Attach any external URL or local file path to a line of code. Clicking it opens 
 // @ng attach ../assets/architecture.pdf
 ```
 
+### ✅ Inline To-Do Checklists
+Get an instant progress summary for any note containing a checklist (`- [ ]`, `* [x]`) directly in the CodeLens.
+```typescript
+// Something Like: [📝 refactoring-plan] (2/5)
+// @ng note refactoring-plan
+```
+
 ### ⚡ Zero Config
 It just works. Install, click, type.
 
