@@ -13,7 +13,7 @@
 | Platform | Link |
 | :--- | :--- |
 | **VS Code Marketplace** | [![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/ParasKoundal.notesgutter?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=ParasKoundal.notesgutter) |
-| **Open VSX (For Cursor, Antigravity etc)** | [![Open VSX](https://img.shields.io/open-vsx/v/ParasKoundal/notesgutter?style=for-the-badge&logo=eclipse-ide)](https://open-vsx.org/extension/ParasKoundal/notesgutter) |
+| **Open VSX** | [![Open VSX](https://img.shields.io/open-vsx/v/ParasKoundal/notesgutter?style=for-the-badge&logo=eclipse-ide)](https://open-vsx.org/extension/ParasKoundal/notesgutter) |
 
 ---
 
@@ -30,7 +30,7 @@ You've been there. You need to explain a complex regex or a weird hack, so you w
 const users = rawData.filter(u => u.isActive && !u.isDeleted);
 ```
 
-Now your file is cluttered with comments instead of code. 😫
+Now your file is cluttered with comments instead of code. 😩
 
 ## 💡 The Solution
 
@@ -49,6 +49,18 @@ Click the button which will appear above the comment, and a beautiful **Markdown
 ---
 
 ## ✨ Features
+
+### 🗂️ Activity Bar Table of Contents (Notes Explorer)
+Access all your notes, drawings, and attachments in one centralized sidebar:
+- **Activity Bar Button**: Dedicated icon on the sidebar for browsing all anchors across your project or directory.
+- **Directory / Project Scope Switcher**: Switch between the entire workspace, current file's directory, or any custom folder.
+- **Flexible Grouping Modes**: View notes grouped by file, directory hierarchy, or as a flat list.
+- **One-Click Item Actions**:
+  - **Go to Code** (`$(go-to-file)`): Jump directly to the exact line in code.
+  - **Open Note / Drawing** (`$(book)`): Open sidecar editor or canvas in one click.
+  - **Rename Anchor** (`$(edit)`): Rename anchors with automatic link syncing.
+  - **Delete Anchor** (`$(trash)`): Remove notes and clean up comments.
+- **Checklist Badges & Snippet Previews**: Track task progress (e.g. `✓ 2/5`) and hover over notes for rich content previews.
 
 ### 📝 Rich Markdown Notes
 Write full documentation, TODOs, or rants using a Notion-style editor. Headers, lists, code blocks—it's all there.
@@ -96,7 +108,7 @@ Attach any external URL or local file path to a line of code. Clicking it opens 
 ### ✅ Inline To-Do Checklists
 Get an instant progress summary for any note containing a checklist (`- [ ]`, `* [x]`) directly in the CodeLens.
 ```typescript
-// Something Like: [📝 refactoring-plan] (2/5)
+// [📝 refactoring-plan] (2/5)
 // @ng note refactoring-plan
 ```
 
@@ -107,14 +119,36 @@ It just works. Install, click, type.
 
 ## 🚀 How to Use
 
-1.  **Add a Note**:
+1.  **Open Table of Contents**:
+    -   Click the **NotesGutter** icon in the Activity Bar on the left side of VS Code.
+    -   Use the top toolbar buttons to switch directories/projects, switch grouping, or refresh notes.
+    -   Click any note to open its sidecar editor, or click the **Go to Code** button to jump directly to the code location.
+
+2.  **Add a Note**:
     -   Place your cursor on a tricky line.
-    -   Run `NotesGutter: Insert Note Anchor` (or `Cmd+Shift+M`) or manually type the command.
+    -   Run `NotesGutter: Insert Note Anchor` (or `Cmd+Shift+M`) or manually type the comment.
     -   Start typing! ✍️
 
-2.  **Add a Drawing**:
-    -   Run `NotesGutter: Insert Draw Anchor` or manually type.
+3.  **Add a Drawing**:
+    -   Run `NotesGutter: Insert Draw Anchor` (or `Cmd+Shift+D`) or manually type.
     -   Unleash your inner artist! 🎨
+
+---
+
+## ⌨️ Commands & Shortcuts
+
+| Command | Shortcut (macOS) | Shortcut (Windows/Linux) | Description |
+| :--- | :--- | :--- | :--- |
+| `NotesGutter: Insert Note Anchor` | `Cmd+Shift+M` | `Ctrl+Shift+M` | Insert a new Markdown note anchor at current line |
+| `NotesGutter: Insert Draw Anchor` | `Cmd+Shift+D` | `Ctrl+Shift+D` | Insert a new infinite-canvas drawing anchor |
+| `NotesGutter: Insert Attach Anchor` | `Cmd+Shift+A` | `Ctrl+Shift+A` | Attach a URL or local file to current line |
+| `NotesGutter: Switch Directory or Project Scope` | — | — | Switch TOC scope (Workspace, Current Folder, Custom) |
+| `NotesGutter: Change Grouping Mode` | — | — | Toggle TOC grouping (By File, By Directory, Flat) |
+| `NotesGutter: Refresh Notes` | — | — | Force re-scan of all notes in the active scope |
+| `NotesGutter: Rename Anchor` | — | — | Rename anchor and update linked storage |
+| `NotesGutter: Prune Orphaned Notes` | — | — | Clean up unused note files in `.notesgutter/` |
+
+---
 
 ## 🔒 Privacy & Storage
 
@@ -130,5 +164,3 @@ Found a bug? Have a wild idea? [Open an issue](https://github.com/ParasKoundal/N
 ---
 
 *Made with ☕ by [Paras Koundal](https://github.com/ParasKoundal)*
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Support-yellow.svg)](https://buymeacoffee.com/paraskoundal)
