@@ -112,6 +112,12 @@ Get an instant progress summary for any note containing a checklist (`- [ ]`, `*
 // @ng note refactoring-plan
 ```
 
+### 💡 Anchor Line Highlighting
+Any line of code that contains a NotesGutter caller (`@ng`) is softly highlighted with a background color tint (warm yellow highlighter by default).
+- **Customizable Color**: Choose from built-in presets (Yellow, Green, Cyan, Purple, Orange, Pink) or enter any hex code (`#FFE600`) or CSS color name.
+- **Adjustable Transparency / Opacity**: Finetune the opacity globally (default `0.25` for a clean, non-intrusive highlighter pen aesthetic).
+- **Global Toggle**: Instantly turn highlights on or off via the Table of Contents toolbar button (`$(paintcan)`) or the Command Palette (`NotesGutter: Toggle Line Highlights`).
+
 ### ⚡ Zero Config
 It just works. Install, click, type.
 
@@ -147,6 +153,25 @@ It just works. Install, click, type.
 | `NotesGutter: Refresh Notes` | — | — | Force re-scan of all notes in the active scope |
 | `NotesGutter: Rename Anchor` | — | — | Rename anchor and update linked storage |
 | `NotesGutter: Prune Orphaned Notes` | — | — | Clean up unused note files in `.notesgutter/` |
+| `NotesGutter: Toggle Line Highlights` | — | — | Globally toggle anchor line background highlighting on/off |
+| `NotesGutter: Choose Highlight Color` | — | — | Select or customize the anchor line highlight color |
+| `NotesGutter: Adjust Highlight Transparency / Opacity` | — | — | Adjust highlight opacity / transparency level (0.0 to 1.0) |
+
+---
+
+## ⚙️ Configuration Settings
+
+Configure NotesGutter via VS Code Settings (`Cmd+,` or `Ctrl+,`):
+
+| Setting | Default | Description |
+| :--- | :--- | :--- |
+| `notesgutter.highlight.enabled` | `true` | Enable background highlighting for lines containing NotesGutter anchors (`@ng`). |
+| `notesgutter.highlight.color` | `"#FFE600"` | Background highlight color (hex code like `#FFE600` or color name like `yellow`, `green`, `cyan`, `pink`, `orange`, `purple`). |
+| `notesgutter.highlight.opacity` | `0.25` | Opacity / transparency level of the highlight (0.0 for invisible, 1.0 for solid). |
+| `notesgutter.highlight.wholeLine` | `true` | Whether to highlight the entire line across the editor viewport. |
+| `notesgutter.enableCodeLens` | `true` | Show NotesGutter CodeLens above anchor lines. |
+| `notesgutter.autoSaveDelay` | `500` | Delay in milliseconds before auto-saving a note after typing stops. |
+| `notesgutter.shadowDir` | `".notesgutter"` | Name of the shadow storage directory relative to source files. |
 
 ---
 
